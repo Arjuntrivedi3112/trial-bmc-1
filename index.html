@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Manosthiti</title>
+    <title>Welcome - Mental Health Chatbot</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Manosthiti</h1>
+        <h1>Welcome to Mental Health Chatbot</h1>
         <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About</a> | 
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
             <a href="settings.html">Settings</a>
         </nav>
-        <div class="signed-in-info">
-            Signed in as: <span id="signed-in-username"></span>
-        </div>
     </header>
-
     <main>
-        <h2>Welcome, <span id="welcome-username"></span>!</h2>
-        <p>Explore our chatbot and mental health features.</p>
+        <section>
+            <h2>Your Mental Health Companion</h2>
+            <p>This project integrates AI to provide mental health support and guidance.</p>
+        </section>
+        <section id="chatbot-section">
+            <h3>Chat with Us</h3>
+            <div id="chatbot-container">
+                <div id="chat-header">
+                    <h4>AI Mental Health Chatbot</h4>
+                </div>
+                <div id="chat-body">
+                    <p class="placeholder-message">This is where conversations will appear.</p>
+                </div>
+                <div id="chat-footer">
+                    <input type="text" id="chat-input" placeholder="Type your message..." disabled>
+                    <button id="chat-send" disabled>Send</button>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Manosthiti. All rights reserved.</p>
+        <p>&copy; 2024 Mental Health Chatbot. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
