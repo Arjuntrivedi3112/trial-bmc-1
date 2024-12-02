@@ -14,6 +14,11 @@ app.use(session({
 }));
 
 const users = { 'arjun@example.com': 'password123' };
+const users = {
+    '123@gmail.com': {
+        password: '123456',
+    }
+};
 
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
