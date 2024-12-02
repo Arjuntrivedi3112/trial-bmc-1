@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Mental Health Chatbot</title>
+    <title>Welcome to Manosthiti</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Mental Health Chatbot</h1>
+        <h1>Welcome to Manosthiti</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="login.html">Login</a>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
             <a href="settings.html">Settings</a>
         </nav>
+        <div class="signed-in-info">
+            Signed in as: <span id="signed-in-username"></span>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>Your Mental Health Companion</h2>
-            <p>This project integrates AI to provide mental health support and guidance.</p>
-        </section>
+        <h2>Welcome, <span id="welcome-username"></span>!</h2>
+        <p>Explore our chatbot and mental health features.</p>
     </main>
+
     <footer>
-        <p>&copy; 2024 Mental Health Chatbot. All rights reserved.</p>
+        <p>&copy; 2024 Manosthiti. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
