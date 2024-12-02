@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Mental Health Chatbot</title>
+    <title>About - Manosthiti</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>About Us</h1>
+        <h1>About Manosthiti</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
             <a href="login.html">Login</a>
-            <a href="settings.html">Settings</a>
         </nav>
+        <div id="user-greeting"></div> <!-- Display username if logged in -->
     </header>
+
     <main>
-        <section>
-            <h2>Our Project</h2>
-            <p>Mental Health Chatbot is a project that leverages AI to provide conversational support and guidance for mental health.</p>
+        <section class="about-section">
+            <h2>Who We Are</h2>
+            <p>
+                Manosthiti is an AI-powered chatbot designed to provide mental health support. 
+                We aim to create a safe space where individuals can express themselves and seek assistance. 
+                Our mission is to promote mental wellness and make support accessible to everyone.
+            </p>
         </section>
+
         <section class="team-section">
-            <div class="team-member">
-                <h3>Arjun Trivedi</h3>
-                <p>Team Lead</p>
-            </div>
-            <div class="team-member">
-                <h3>Jiya Shah</h3>
-                <p>AI Specialist</p>
-            </div>
-            <div class="team-member">
-                <h3>Diya Patel</h3>
-                <p>Frontend Developer</p>
-            </div>
-            <div class="team-member">
-                <h3>Tashvi Patel</h3>
-                <p>Backend Developer</p>
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="team1.jpg" alt="Team Member 1">
+                    <h3>Arjun Trivedi</h3>
+                    <p>Mental Health Specialist</p>
+                </div>
+                <div class="team-member">
+                    <img src="team2.jpg" alt="Team Member 2">
+                    <h3>Jiya shah</h3>
+                    <p>AI Engineer</p>
+                </div>
+                <div class="team-member">
+                    <img src="team3.jpg" alt="Team Member 3">
+                    <h3>Tashvi and DIya</h3>
+                    <p>Product Designer</p>
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Mental Health Chatbot. All rights reserved.</p>
+        <p>&copy; 2024 Manosthiti. All rights reserved.</p>
     </footer>
+
+    <script src="login.js"></script>
 </body>
 </html>
