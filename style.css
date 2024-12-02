@@ -1,94 +1,149 @@
-/* General body styling with gradient background */
-body {
-    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient blue */
-    color: #f4f4f4;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
+/* General Reset */
+* {
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Header and Navigation Styling */
+/* Body */
+body {
+    background: linear-gradient(135deg, #b4dfe5, #fef6e4);
+    color: #2e4053;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
 header {
-    background: rgba(30, 60, 114, 0.9);
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: #334756;
+    color: #fef6e4;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    color: #f4f4f4;
+header h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: #fef6e4;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.3rem 0.6rem;
 }
 
-nav a:hover {
-    color: #ffa726;
+header nav a:hover {
+    background: #406882;
+    border-radius: 5px;
 }
 
-/* Main Content Section */
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    animation: fadeIn 1.2s ease-in-out;
-}
-
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Transparent effect */
+/* Signed-in Info */
+.signed-in-info {
+    font-size: 0.9rem;
+    background: #ffcccb;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #334756;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #334756;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Forms */
+form {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input {
+    background: #f0f0f0;
+}
+
+form input:focus {
+    background: #e3e3e3;
+}
+
+form button {
+    background: #ffcccb;
+    color: #334756;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #ff7f7f;
+}
+
+/* Moving Button */
+#goButton {
+    position: relative;
+    transition: 0.3s ease-in-out;
 }
 
 /* Footer */
 footer {
+    background: #334756;
+    color: #fef6e4;
     text-align: center;
-    padding: 20px;
-    background: rgba(30, 60, 114, 0.9);
-    color: white;
-    margin-top: 20px;
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
 }
 
-/* Team Section */
-.team-section {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 20px;
-}
 
-.team-member {
-    text-align: center;
-    background: rgba(44, 62, 80, 0.8);
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.team-member:hover {
-    transform: scale(1.05);
-}
-
-/* Keyframes for smooth animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
